@@ -42,11 +42,12 @@ body {
   input[type="tel"],
   select,
   textarea {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 14px;
+    box-sizing: border-box;
   }
   
   .phone-section {
@@ -181,9 +182,6 @@ body {
     padding-left: 35px; 
   }
   
-  .orgType{
-    width:102%;
-  }
   .mobile{ margin-bottom:50px;}
 
   strong{color:#25D366;}

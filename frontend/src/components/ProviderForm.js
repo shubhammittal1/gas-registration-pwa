@@ -105,7 +105,8 @@ const ProviderForm = () => {
 
       <div className="form-group mobile" >
         <label>Mobile Number</label>
-        <input type="tel"  placeholder="Input text" value={mobile} onChange={(e) => setMobile(e.target.value)}  />
+        <input type="tel" onChange={(e) => { setMobile(e.target.value.replace(/\D/g, '')); }}
+               pattern="[0-9]{10}" maxLength={13} minLength={10} placeholder="Input text" value={mobile}  />
       </div>
 
       <button onClick={handleRegister}>Register</button>

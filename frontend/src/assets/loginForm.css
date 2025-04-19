@@ -49,11 +49,10 @@
   
   .phone-container {
     margin-bottom: 15px;
-    width: 100%;
   }
   
   .phone-input {
-    width: 100% !important;
+    
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc !important;
