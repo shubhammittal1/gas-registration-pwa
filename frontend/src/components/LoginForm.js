@@ -91,7 +91,7 @@ const LoginForm = () => {
 
         <PhoneInput
           country={country}
-          value={mobile}
+          placeholder='Enter your mobile number'
           onChange={(value, data) => {
             setMobile(value);
             setDialCode(data.dialCode);

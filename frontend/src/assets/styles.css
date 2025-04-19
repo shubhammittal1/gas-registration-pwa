@@ -42,7 +42,7 @@ body {
   input[type="tel"],
   select,
   textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -177,11 +177,23 @@ body {
     pointer-events: none; 
     transition: opacity 0.2s ease;
   }
-  
-  .form-input.with-icon {
-    padding-left: 35px; 
+
+  .flag-dropdown{
+    border-radius: 5px !important;
+    margin-left: 2.5%;
   }
   
+ 
+  
+  .form-control.phone-input{
+    width: 82% !important;
+    margin-left: 15%;
+  }
+
+  .selected-flag{
+    color:#f1f7fb !important;
+  }
+
   .mobile{ margin-bottom:50px;}
 
   strong{color:#25D366;}
