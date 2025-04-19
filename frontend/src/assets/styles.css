@@ -183,13 +183,16 @@ body {
     margin-left: 2.5%;
   }
   
- 
+  .form-input.with-icon {
+    padding-left: 35px; 
+  }
   
   .form-control.phone-input{
     width: 82% !important;
     margin-left: 15%;
+    padding-left: 10px;
   }
-
+  
   .selected-flag{
     color:#f1f7fb !important;
   }
