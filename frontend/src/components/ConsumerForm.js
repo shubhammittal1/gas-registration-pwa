@@ -14,10 +14,34 @@ const ConsumerForm = () => {
   const [isOrgNameFocused, setIsOrgNameFocused] = useState(false);
   const [isNameFocused, setIsNameFocused] = useState(false);
 
-  const handleRegister = () => {
-    // Add your form validation or API logic here
-    navigate('/success');
+  const handleRegister = async () => {
+    try {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/register`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          role,
+          orgName,
+          orgType,
+          address: orgAddress,
+          name,
+          mobile,
+        }),
+      });
+  
+      if (response.ok) {
+        navigate('/success');
+      } else {
+        alert('Registration failed.');
+      }
+    } catch (error) {
+      console.error('Error registering consumer:', error);
+      alert('Something went wrong.');
+    }
   };
+  
 
   return (
     <div className="container">

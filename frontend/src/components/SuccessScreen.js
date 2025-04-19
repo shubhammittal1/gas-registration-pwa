@@ -1,19 +1,3 @@
-// import React from 'react';
-// import { useNavigate } from 'react-router-dom';
-
-// const SuccessScreen = () => {
-//   const navigate = useNavigate();
-//   return (
-//     <div>
-//       <h2>Success!</h2>
-//       <p>Thank you for submitting your request. Our team will reach out via WhatsApp to activate your profile.</p>
-//       <button onClick={() => navigate('/')}>Sign In</button>
-//     </div>
-//   );
-// };
-
-// export default SuccessScreen;
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
